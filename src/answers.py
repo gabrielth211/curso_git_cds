@@ -3,7 +3,7 @@ import plotly.express as px
 import streamlit as st
 
 def rd1_question_9(df):
-    df_grouped = df1[['id', 'seller_type']].groupby('seller_type')
+    df_grouped = df[['id', 'seller_type']].groupby('seller_type')
 
     df_grouped = df_grouped.count().reset_index()
 
